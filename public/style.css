@@ -1,0 +1,116 @@
+body {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+}
+
+/*  photos */
+.uno {
+    grid-area: uno;
+}
+
+.dos {
+    grid-area: dos;
+}
+
+.tres {
+    grid-area: tres;
+}
+
+.cuatro {
+    grid-area: cuatro;
+}
+
+.cinco {
+    grid-area: cinco;
+}
+
+.grid-container {
+    margin: auto;
+    background: rgba(255, 255, 255, 0.8);
+    display: grid;
+    grid-template-areas:
+        "uno . tres"
+        "uno cinco cuatro"
+        ". . cuatro"
+        "dos dos cuatro";
+    grid-gap: 4px;
+    padding: 4px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.grid-container div {
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container div:nth-child(1) {
+    background-image: url("imagen-1.jpg");
+    background-position: center;
+    height: auto;
+    max-width: 100%;
+}
+
+.grid-container div:nth-child(2) {
+    background-image: url("imagen-2.jpg");
+    background-position: center;
+    height: auto;
+    max-width: 100%;
+}
+
+.grid-container div:nth-child(3) {
+    max-width: 100%;
+    height: auto;
+    background-image: url("imagen-3.jpg");
+    background-position: center;
+}
+
+.grid-container div:nth-child(4) {
+    background-image: url("imagen-4.jpg");
+    background-position: center;
+    height: auto;
+    max-width: 100%;
+}
+
+.grid-container div:nth-child(5) {
+    background-image: url("imagen-5.jpg");
+    background-position: center;
+    height: auto;
+    max-width: 100%;
+}
+
+.grid-container div:nth-child(6) {
+    background-image: url("imagen-6.jpg");
+    background-position: center;
+    height: auto;
+    max-width: 100%;
+}
+
+.grid-container div:nth-child(7) {
+    background-image: url("imagen-7.jpg");
+    background-position: center;
+    height: auto;
+    max-width: 100%;
+}
+
+.grid-container div:nth-child(8) {
+    background-image: url("imagen-8.jpg");
+    background-position: center;
+    height: auto;
+    max-width: 100%;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}

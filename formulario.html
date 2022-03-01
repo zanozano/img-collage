@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Desafio 3</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+			integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="http://localhost:3000/style.css" />
+	</head>
+
+	<body class="p-5">
+		<!-- Titulo -->
+		<h1 class="text-center mb-5">Nueva imagen</h1>
+		<!-- Form -->
+		<div class="container p-5 w-50 border rounded-3">
+			<form class="form-group" action="/collage" method="POST" enctype="multipart/form-data">
+				<!-- <form method="POST" enctype="multipart/form-data"> -->
+				<div class="row my-3">
+					<div class="col">
+						<h4>Imagen:</h4>
+					</div>
+					<div class="col">
+						<input class="form-control-file" type="file" name="target_file" required />
+					</div>
+				</div>
+				<div class="row my-3">
+					<div class="col">
+						<h4>Posición:</h4>
+					</div>
+					<div class="col">
+						<input class="form-control" type="number" name="posicion" required />
+					</div>
+				</div>
+
+				<input class="btn btn-primary" type="submit" value="Subir imagen" />
+			</form>
+		</div>
+	</body>
+</html>
